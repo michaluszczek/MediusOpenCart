@@ -21,12 +21,13 @@ namespace XUnitTestProject1
             ProductComparePage productComparePage = new ProductComparePage(driver);
             ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
 
+            mainPage.VerifyPage();
             mainPage.CurrencyDropdownClick();
             mainPage.ChooseGBP();
             mainPage.SearchForIpod();            
             resultPage.AddIpodsToProductCompare();
             resultPage.GoToProductComparison();
-            Assert.True(productComparePage.IsProductComparison());
+            productComparePage.IsProductComparison();
             productComparePage.removeIpodShuffle();
             var productPrice = productComparePage.addRandomIpodToCart();
             productComparePage.GoToShoppingCart();

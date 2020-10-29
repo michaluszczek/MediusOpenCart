@@ -18,7 +18,5 @@ namespace XUnitTestProject1.PageObjects
             driver.Navigate().GoToUrl(StartUrl);
             return driver;
         }
-
-
     }
 }

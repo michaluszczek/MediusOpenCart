@@ -1,4 +1,6 @@
 ﻿using OpenQA.Selenium;
+using System;
+using Xunit;
 
 namespace XUnitTestProject1.PageObjects
 {
@@ -23,6 +25,13 @@ namespace XUnitTestProject1.PageObjects
         {
             GBP.Click();
         }
+
+        internal void VerifyPage()
+        {
+            Driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(5);
+            Assert.Equal("Your Store", Driver.Title);
+        }
+
 
         internal void SearchForIpod()
         {

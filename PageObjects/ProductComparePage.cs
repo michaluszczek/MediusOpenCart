@@ -3,6 +3,7 @@ using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using Xunit;
 using XUnitTestProject1.Utilities;
 
 namespace XUnitTestProject1.PageObjects
@@ -20,22 +21,15 @@ namespace XUnitTestProject1.PageObjects
         private IList<IWebElement> prices => Driver.FindElements(By.XPath("*//tr[td/text() = 'Price']/td/following-sibling::*"));
         private IWebElement viewCart => Driver.FindElement(By.XPath("//*[@id='cart']/ul/li[2]/div/p/a[1]"));
 
-        internal bool IsProductComparison()
+        internal void IsProductComparison()
         {
-            var title = Driver.Title;
-            if(title == "Product Comparison")
-            {
-                return true;
-            }
-            else
-                return false;
+            Assert.Equal("Product Comparison", Driver.Title);           
         }
 
         internal void removeIpodShuffle()
         {
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
             removeButton.Click();
-            wait.Until(e => shoppingCartButton.Displayed);
         }
 
         internal decimal addRandomIpodToCart()
@@ -53,7 +47,6 @@ namespace XUnitTestProject1.PageObjects
 
         internal void GoToShoppingCart()
         {
-            //Waits.WaitUntilClickable(Driver, shoppingCartButton, 10);
             Helper wait = new Helper(Driver);
             wait.WaitUntilCilckable(shoppingCartButton);
             shoppingCartButton.Click();
