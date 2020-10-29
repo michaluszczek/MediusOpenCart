@@ -31,9 +31,9 @@ namespace XUnitTestProject1
             productComparePage.removeIpodShuffle();
             var productPrice = productComparePage.addRandomIpodToCart();
             productComparePage.GoToShoppingCart();
-            var shoppingCartPrice = shoppingCartPage.GetShopCartPrice();
+            var totalPrice = shoppingCartPage.GetTotalPrice();
 
-            Assert.Equal(productPrice, shoppingCartPrice);
+            Assert.Equal(productPrice, totalPrice);
         }
 
         public void Dispose()

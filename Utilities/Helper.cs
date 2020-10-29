@@ -23,7 +23,7 @@ namespace XUnitTestProject1.Utilities
 
         public IWebElement WaitUntilCilckable(IWebElement elementToBeCilcked)
         {
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(5));
             var element = wait.Until<IWebElement>(driver =>
             {
                 try

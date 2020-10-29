@@ -12,7 +12,7 @@ namespace XUnitTestProject1.PageObjects
         }
 
         private IWebElement totalPrice => Driver.FindElement(By.XPath("//*[@id='content']/div[2]/div/table/tbody/tr[4]/td[2]"));
-        internal decimal GetShopCartPrice()
+        internal decimal GetTotalPrice()
         {
             var price = totalPrice.Text;
             var textPrice = price.Substring(price.IndexOf('£') + 1);
@@ -20,6 +20,4 @@ namespace XUnitTestProject1.PageObjects
             return decimalPrice;
         }
     }
-
-
 }

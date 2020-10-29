@@ -24,7 +24,5 @@ namespace XUnitTestProject1.PageObjects
         {
             productCompare.Click();
         }
-    }
-
-    
+    }    
 }

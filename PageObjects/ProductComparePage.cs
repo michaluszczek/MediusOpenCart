@@ -28,7 +28,6 @@ namespace XUnitTestProject1.PageObjects
 
         internal void removeIpodShuffle()
         {
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
             removeButton.Click();
         }
 
