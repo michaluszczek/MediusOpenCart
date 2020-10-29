@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using Xunit;
-using XUnitTestProject1.Utilities;
+using OpenCartTest.Utilities;
 
-namespace XUnitTestProject1.PageObjects
+namespace OpenCartTest.PageObjects
 {
     internal class ProductComparePage : BasePage
     {

@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
-using XUnitTestProject1.PageObjects;
+using OpenCartTest.PageObjects;
 
-namespace XUnitTestProject1.Utilities
+namespace OpenCartTest.Utilities
 {
     internal class Helper : BasePage
     {        

@@ -2,7 +2,7 @@
 using System;
 using Xunit;
 
-namespace XUnitTestProject1.PageObjects
+namespace OpenCartTest.PageObjects
 {
     internal class MainPage : BasePage
     {

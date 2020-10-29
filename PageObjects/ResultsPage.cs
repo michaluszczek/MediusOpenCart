@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using System.Collections.Generic;
 
-namespace XUnitTestProject1.PageObjects
+namespace OpenCartTest.PageObjects
 {
     internal class ResultPage : BasePage
     {

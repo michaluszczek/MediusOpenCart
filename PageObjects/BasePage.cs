@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace XUnitTestProject1.PageObjects
+namespace OpenCartTest.PageObjects
 {
     public class BasePage
     {

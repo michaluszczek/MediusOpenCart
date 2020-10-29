@@ -1,10 +1,10 @@
 using OpenQA.Selenium;
 using System;
 using Xunit;
-using XUnitTestProject1.PageObjects;
-using XUnitTestProject1.Utilities;
+using OpenCartTest.PageObjects;
+using OpenCartTest.Utilities;
 
-namespace XUnitTestProject1
+namespace OpenCartTest
 {
     public class EtoETest : IDisposable
     {

@@ -2,7 +2,7 @@
 using System;
 using System.Globalization;
 
-namespace XUnitTestProject1.PageObjects
+namespace OpenCartTest.PageObjects
 {
     internal class ShoppingCartPage : BasePage
     {
